@@ -91,6 +91,7 @@ parse_url() {
 
 add_pu_alias() {
 	git config --global alias.pu '!git fetch origin -v; git fetch upstream -v; git rebase upstream/master'
+	echo "Use 'git pu ; git push origin' in the future to sync a fork with its upstream... "
 }
 
 detect_git_host() {
@@ -154,7 +155,6 @@ setup_git() {
 			fi
 			
 		else
-			echo "No ORG over ride"
 			mkdir -p ${GOPATH}/src/$REPO_HOST/$org
 			cd  ${GOPATH}/src/$REPO_HOST/$org
 		fi	
