@@ -10,10 +10,10 @@ Usage: ./clone-fork.sh git://github.com/childsb/kubernetes.git [OPTION]...
 Options:
  -g, --golang   	clones this project into the proper golang path
  -o, --org   	 	uses specified org instead of trying to discover it from the git path. (only for golang)
- -r, --repo_host  	git repo host (defaults to github.com)
- -a, --add_alias      add the alias 'pu' to git which allows auto updating a forked repo with 'git pu'
+ -r, --repo_host	git repo host, defaults to github.com. (only for golang)
+ -a, --add_alias	add the alias 'pu' to git which allows auto updating a forked repo with 'git pu'
  -u, --update		update a forked repo after cloning to match the upstream.
- -h, --help       	show this message
+ -h, --help   		show this message
 
 Parts of a golang project path look like:
 
@@ -26,5 +26,6 @@ Parts of a golang project path look like:
 	REPOHOST=github.com
 	ORG=openshift
 	repo=origin
+
 ```
 
