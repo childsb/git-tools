@@ -159,8 +159,7 @@ setup_git() {
 			cd  ${GOPATH}/src/$REPO_HOST/$org
 		fi	
 	fi
-	echo "current dir: `pwd`"
-	git clone $primary_repo || { echo >&2 "git clone failed, exiting.."; exit 1; }
+	git clone $primary_repo || { echo >&2 "git clone failed to clone into `pwd`"; exit 1; }
 	cd $repo
 
 	if [ "$parent_url" == "null" ]; then
