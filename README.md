@@ -1,8 +1,8 @@
 # git-tools
-Tools for using git / github / golang
+This repo contains tools for using github and golang
 
 # clone-fork.sh
-This is a tool for cloning forks and adding the correct parent as upstream.  It also supports cloning into $GOPATH if the project is golang.
+This is a tool for cloning forks and adding the correct parent as upstream.  It also supports cloning into $GOPATH if the project is go written in go.  Personally I use GOPATH=/opt/go, but i assume everyone does it differently.
 
 ```
 Usage: ./clone-fork.sh git://github.com/childsb/kubernetes.git [OPTION]...
