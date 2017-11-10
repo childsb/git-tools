@@ -29,6 +29,9 @@ Parts of a golang project path look like:
 	repo=origin
 
 
-
+#gysnc
 ```
+This command syncs a go project to another machine with a configured $GOPATH
 
+Usage: ./gsync.sh source-go-project user@destinationHost
+``` 

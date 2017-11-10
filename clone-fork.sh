@@ -186,6 +186,11 @@ if ! [ -x "$(command -v jq)" ]; then
   exit 1
 fi
 
+if ! [ -x "$(command -v git)" ]; then
+  echo 'This script requires git, Please install (https://git-scm.com/downloads)' >&2
+  exit 1
+fi
+
 GO_LANG=false
 UPDATE_UPSTREAM=false
 
